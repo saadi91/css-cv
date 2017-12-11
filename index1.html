@@ -11,122 +11,230 @@
   <title>Jad Sarout | CV</title>
   
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="style/style.css">
   <!-- /Stylesheets -->
   <style>
-
-* {
-    margin: 0px;
-    padding: 0px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-body {
+  body {
     background: #fff;
     font: 14px 'Open Sans', 'tahoma', verdana, arial, sans-serif;
     color: #333;
-    
+  
 }
 body,
 html {
     height: 100%;
     width: 100%;
 }
-#wrapper {
-margin: 3% 3% 5% 5%;
-border: 1px solid black;
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: content-box;
 }
-#wrapper h3 {
-  margin-right: 20px;
+
+
+#wrapper{
+	width:900px;
+	margin:0 auto;
+	margin-top:150px;
 }
-header {
-width: 100%;
-height: 200px;
-border: 1px solid black;
-}
-header>div {
-position: relative;
-}
-section {
+  header {
+  width: 100%;
+  height: 150px;
+  background: gray;
+  position:absolute;
+  right:0;
+  top:0;
+  }
+  header>div{
+	width:900px;
+	margin:0 auto;
+	position:relative;
+  }
+  hgroup {
+  position: absolute;
+  left: 3%;
+  top: 40px;
+  color: red;
   
-}
-hgroup h1 {
- border-bottom: 1px solid gray;
- padding-bottom: 10px; 
-}
-hgroup h2{
-display: none;
-}
-figure {
+ }
+  hgroup h1 {
+  padding-bottom: 15%;
+  }
+  figure {
   position: absolute;
-  right: 20px;
-  top: 10px;
-  transform: rotate(-12deg);
-}
-#about h3 {
-  display: none;
-}
-#about p {
-  position: absolute;
-  top: 15%;
-  left:5%;
-  width: 60%;
-  text-align: justify;
-  color: gray;
-}
-#competencies {
-  height: 100px;
-}
-#competencies h3 {
+  left: 25%;
+  top: 20px;
+  
+  }
+  section {
+  width: 50%;
   float: left;
-  height: 100%;
+  }
+  section P{
+  margin-right: 20px;
+  }
+ .contacts{
+ position: absolute;
+  top:15px;
+  right: 0px;
+  
+ }
+ 
+ .contact-type {
+ float: left;
+ width: 110px;
+ background: red;
+
+}
+ .contact-value,a {
+ 
+ float: left;
+ width: 300px;
+ background: black;
+ color:red;
+ text-decoration:none;
+ padding-left: 5px;
+ }
+ .contact-skype dd {
+color: black;
+ }
+ .content {
+ padding: 5% 0%;
+ }
+ .content h3 {
+ border-bottom: 1px solid gray;
+ padding:2% 0% ;
+ }
+.content p {
+padding-top: 2%;
 }
 .skills {
-  display: inline-block;
-  border-left: 1px solid black;
+padding-top: 2%;
 }
-.skill {
-  display: inline-block;
-  background: rgb(81, 134, 113);
-}
-.skills-primary {
-  w
-}
-#experiences {
-  margin-top: 50px;
-}
-#experiences h3{
+ h3::before {
+ content: " ";
+ width: 15px;
+ height: 15px;
+ border-radius: 7.5px;
+ display: inline-block;
+ margin-right: 3px;
+ background: red;
+ }
 
-}
-#experiences>div {
-  position: relative;
-}
+  .skills-secondary {
+ margin-top: 10px;
+ }
+   .skills-primary::before {
+   content: "Main";
+   display: block;
+   font-size: 16px;
+   }
+   .skills-secondary::before {
+   content: "Other";
+   display: block;
+   font-size: 16px;
+   }
+ #competencies div {  
+margin-bottom: 5px;
+ }
+ 
+ .skill {
+  background: gray;
+  height: 30px;
+  }
+ .skills-primary span {
+ background: red;
+ display: inline-block;
+height: 20px;
+margin: 4px;
+ }
+ .skills-secondary span {
+ background:rgb(232, 55, 55);
+ display: inline-block;
+height: 20px;
+margin: 4px;
+ }
+ div[data-skill='5'] span {
+ width: 50%;
+ }
+  div[data-skill='3'] span {
+ width: 30%;
+ }
+  div[data-skill='1'] span {
+ width: 6%;
+ }
+  div[data-skill='9'] span {
+ width: 85%;
+ }
+  div[data-skill='7'] span {
+ width: 70%;
+ }
+  .experiences {
+   width: 50%;
+   }
+ #experiences h3 {
+ padding-bottom: 9px;
+ border-bottom: 1px solid gray;
+ }
+ .education h3 {
+ padding-top: 2px;
+ }
   
+  #experiences h4 {
+  color: rgb(232, 55, 55);
+  margin-top: 10px;
+  }
+ .experience-type::after {
+ content:" @";
+ }
+ .experience-location::before {
+ content:"In";
+ }
+ .experience-location::after {
+ content:"on";
+ }
+  .experience-details {
+  color: lightgray;
+  padding-left: 7px;
+  }
+  .experience-date-separator {
+  color: rgb(232, 55, 55);
+  }
+  .experience-description {
+  margin-top: 10px;
+  }
+  
+  #education h4 {
+  color: rgb(232, 55, 55);
+  margin-top: 10px;
+  }
 
-.experience {
-  position: absolute;
-  top: 0px;
-  left: 50px;
-}
-.experience-type {
-  display: block;
-  float: left;
-  color: blue;
-}
-.experience-institution {
-  display: none;
-}
-.experience-details {
-  float:right;
-  color: gray;
-}
+  #hobbies {
+  clear: both;
+ }
+ 
+  #hobbies h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  
+  }
+  
+  #hobbies ul {
+  margin: 10px 0px 0px 30px;
+  }
+
+  #contact h3 {
+  visibility: hidden;
+  }
   </style>
 </head>
 <body>
   <div id="wrapper">
-    <header>
-      <div>
+    <header claas="l">    
+	<div>
         <hgroup>
           <h1>Jad Sarout</h1>
           <h2>Codes and Sleeps</h2>
